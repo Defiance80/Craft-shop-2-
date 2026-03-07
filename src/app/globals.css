@@ -5,12 +5,12 @@
 @layer base {
   html { scroll-behavior: smooth; }
   body { @apply bg-sol-black text-white antialiased; }
-  ::selection { @apply bg-sol-copper/30 text-white; }
+  ::selection { @apply bg-sol-yellow/30 text-sol-black; }
 }
 
 @layer utilities {
-  .text-gradient-copper {
-    @apply bg-gradient-to-r from-sol-copper via-sol-amber to-sol-copper bg-clip-text text-transparent;
+  .text-gradient-sun {
+    @apply bg-gradient-to-r from-sol-yellow via-sol-gold to-sol-orange bg-clip-text text-transparent;
   }
 }
 

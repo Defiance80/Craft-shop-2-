@@ -8,7 +8,7 @@ export default function SpaceRental() {
             <div className="absolute inset-0 bg-gradient-to-t from-sol-dark/60 to-transparent" />
           </div>
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-sol-copper mb-2">Your Event, Our Space</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-sol-yellow mb-2">Your Event, Our Space</p>
             <h2 className="font-display text-4xl md:text-5xl mb-6">Host It at Solaris</h2>
             <p className="text-sol-muted text-lg leading-relaxed mb-8">
               From intimate gatherings of 10 to renting out the entire brewery — Solaris is the perfect backdrop for birthdays, corporate events, album releases, and everything in between.
@@ -27,8 +27,8 @@ export default function SpaceRental() {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:info@solarisbeer.com" className="inline-flex items-center justify-center px-8 py-4 bg-sol-copper text-sol-black text-sm uppercase tracking-widest font-semibold rounded hover:bg-sol-amber transition-colors">Inquire About Booking</a>
-              <a href="tel:9516984556" className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white text-sm uppercase tracking-widest font-semibold rounded hover:border-sol-copper hover:text-sol-copper transition-colors">Call (951) 698-4556</a>
+              <a href="mailto:info@solarisbeer.com" className="inline-flex items-center justify-center px-8 py-4 bg-sol-yellow text-sol-black text-sm uppercase tracking-widest font-semibold rounded hover:bg-sol-gold transition-colors">Inquire About Booking</a>
+              <a href="tel:9516984556" className="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white text-sm uppercase tracking-widest font-semibold rounded hover:border-sol-yellow hover:text-sol-yellow transition-colors">Call (951) 698-4556</a>
             </div>
           </div>
         </div>

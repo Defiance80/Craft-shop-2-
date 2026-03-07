@@ -13,7 +13,7 @@ export default function FoodVendors() {
     <section className="py-24 bg-sol-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-sol-copper mb-2">Good Eats</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-sol-yellow mb-2">Good Eats</p>
           <h2 className="font-display text-4xl md:text-5xl">Rotating Food Vendors</h2>
           <p className="text-sol-muted mt-4 max-w-xl mx-auto text-sm">
             We curate the best local food vendors so there&apos;s always something incredible to eat alongside your beer.
@@ -21,8 +21,8 @@ export default function FoodVendors() {
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3">
           {vendors.map((v, i) => (
-            <div key={i} className="bg-sol-card rounded-xl p-5 border border-white/5 hover:border-sol-copper/20 transition-all text-center">
-              <p className="text-[10px] uppercase tracking-widest text-sol-copper mb-2">{v.day}</p>
+            <div key={i} className="bg-sol-card rounded-xl p-5 border border-white/5 hover:border-sol-yellow/20 transition-all text-center">
+              <p className="text-[10px] uppercase tracking-widest text-sol-yellow mb-2">{v.day}</p>
               <p className="font-display text-lg mb-1">{v.name}</p>
               <p className="text-xs text-sol-muted">{v.cuisine}</p>
             </div>

@@ -14,18 +14,18 @@ export default function DraftList() {
     <section id="drafts" className="py-24 bg-sol-dark">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-sol-copper mb-2">Brewed In-House</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-sol-yellow mb-2">Brewed In-House</p>
           <h2 className="font-display text-4xl md:text-5xl">What&apos;s On Draft</h2>
           <p className="text-sol-muted mt-4 max-w-xl mx-auto text-sm">Every beer on this list was brewed right here on Cherry Street. Fresh hops, small batches, no shortcuts.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {beers.map((beer, i) => (
-            <div key={i} className="group relative bg-sol-card rounded-xl p-6 border border-white/5 hover:border-sol-copper/20 transition-all duration-300">
+            <div key={i} className="group relative bg-sol-card rounded-xl p-6 border border-white/5 hover:border-sol-yellow/20 transition-all duration-300">
               <div className="flex items-start justify-between gap-3 mb-3">
                 <div>
-                  <h3 className="font-display text-2xl leading-tight group-hover:text-sol-copper transition-colors">{beer.name}</h3>
-                  <p className="text-sol-copper text-sm mt-1">{beer.style}</p>
+                  <h3 className="font-display text-2xl leading-tight group-hover:text-sol-yellow transition-colors">{beer.name}</h3>
+                  <p className="text-sol-yellow text-sm mt-1">{beer.style}</p>
                 </div>
                 <div className="flex-shrink-0 text-right">
                   <span className="text-2xl font-display text-sol-cream">{beer.abv}</span>
@@ -38,7 +38,7 @@ export default function DraftList() {
               </div>
               <div className="flex items-center gap-2">
                 {beer.tag && (
-                  <span className="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-sol-copper/10 text-sol-copper border border-sol-copper/20">{beer.tag}</span>
+                  <span className="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-sol-yellow/10 text-sol-yellow border border-sol-yellow/20">{beer.tag}</span>
                 )}
                 {beer.collab && (
                   <span className="text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-white/5 text-sol-muted border border-white/10">w/ {beer.collab}</span>

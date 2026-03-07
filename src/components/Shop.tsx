@@ -23,31 +23,31 @@ export default function Shop() {
     <section id="shop" className="py-24 bg-sol-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-sol-copper mb-2">Shop Solaris</p>
+          <p className="text-xs uppercase tracking-[0.3em] text-sol-yellow mb-2">Shop Solaris</p>
           <h2 className="font-display text-4xl md:text-5xl">Beer · Merch · Tickets</h2>
           <p className="text-sol-muted mt-4 max-w-xl mx-auto text-sm">Pre-order beer for pickup, grab some gear, or secure tickets to upcoming shows. Ships throughout California.</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((p) => (
-            <div key={p.id} className="group bg-sol-card rounded-xl overflow-hidden border border-white/5 hover:border-sol-copper/20 transition-all duration-300">
+            <div key={p.id} className="group bg-sol-card rounded-xl overflow-hidden border border-white/5 hover:border-sol-yellow/20 transition-all duration-300">
               <div className="relative h-48 overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style={{ backgroundImage: `url('${p.image}')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-sol-card via-transparent to-transparent" />
                 {(p as { tag?: string }).tag && (
-                  <span className="absolute top-3 right-3 text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-sol-copper/90 text-sol-black font-semibold">{(p as { tag?: string }).tag}</span>
+                  <span className="absolute top-3 right-3 text-[10px] uppercase tracking-widest px-3 py-1 rounded-full bg-sol-yellow/90 text-sol-black font-semibold">{(p as { tag?: string }).tag}</span>
                 )}
                 <span className="absolute top-3 left-3 text-[10px] uppercase tracking-widest px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-sm text-white border border-white/20">{catLabels[p.cat]}</span>
               </div>
               <div className="p-5">
                 <div className="flex items-start justify-between gap-2 mb-2">
-                  <h3 className="font-display text-lg group-hover:text-sol-copper transition-colors">{p.name}</h3>
-                  <span className="text-sol-copper font-display text-lg flex-shrink-0">${p.price.toFixed(2)}</span>
+                  <h3 className="font-display text-lg group-hover:text-sol-yellow transition-colors">{p.name}</h3>
+                  <span className="text-sol-yellow font-display text-lg flex-shrink-0">${p.price.toFixed(2)}</span>
                 </div>
                 <p className="text-sol-muted text-sm mb-4">{p.desc}</p>
                 <button
                   onClick={() => addItem({ id: p.id, name: p.name, price: p.price, image: p.image })}
-                  className="w-full py-3 bg-sol-copper/10 text-sol-copper text-xs uppercase tracking-widest font-semibold rounded-lg border border-sol-copper/20 hover:bg-sol-copper hover:text-sol-black transition-all"
+                  className="w-full py-3 bg-sol-yellow/10 text-sol-yellow text-xs uppercase tracking-widest font-semibold rounded-lg border border-sol-yellow/20 hover:bg-sol-yellow hover:text-sol-black transition-all"
                 >
                   Add to Cart
                 </button>

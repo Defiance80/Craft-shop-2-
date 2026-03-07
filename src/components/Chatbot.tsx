@@ -92,7 +92,7 @@ export default function Chatbot() {
 
   return (
     <>
-      <button onClick={() => setOpen(!open)} className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg shadow-sol-copper/20 flex items-center justify-center transition-all duration-300 ${open ? "bg-white/10 backdrop-blur-lg" : "bg-sol-copper hover:bg-sol-amber hover:scale-110"}`} aria-label="Chat">
+      <button onClick={() => setOpen(!open)} className={`fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full shadow-lg shadow-sol-yellow/20 flex items-center justify-center transition-all duration-300 ${open ? "bg-white/10 backdrop-blur-lg" : "bg-sol-yellow hover:bg-sol-gold hover:scale-110"}`} aria-label="Chat">
         {open ? (
           <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
         ) : (
@@ -103,7 +103,7 @@ export default function Chatbot() {
       {open && (
         <div className="fixed bottom-24 right-6 z-50 w-[380px] max-w-[calc(100vw-2rem)] bg-sol-dark border border-white/10 rounded-2xl shadow-2xl shadow-black/50 flex flex-col overflow-hidden" style={{ height: "min(580px, calc(100vh - 8rem))" }}>
           <div className="px-5 py-4 bg-gradient-to-r from-sol-card to-sol-dark border-b border-white/5 flex items-center gap-3">
-            <div className="w-9 h-9 rounded-full bg-sol-copper/10 border border-sol-copper/30 flex items-center justify-center"><span className="text-sol-copper text-sm">☀️</span></div>
+            <div className="w-9 h-9 rounded-full bg-sol-yellow/10 border border-sol-yellow/30 flex items-center justify-center"><span className="text-sol-yellow text-sm">☀️</span></div>
             <div className="flex-1">
               <p className="text-sm font-semibold">Solaris Assistant</p>
               <p className="text-[11px] text-sol-muted flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-green-500" />Online</p>
@@ -113,7 +113,7 @@ export default function Chatbot() {
           <div className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}>
-                <div className={`max-w-[85%] rounded-2xl px-4 py-3 text-[13px] leading-relaxed ${msg.role === "user" ? "bg-sol-copper text-sol-black rounded-br-sm" : "bg-white/[0.06] text-gray-300 rounded-bl-sm border border-white/5"}`}>
+                <div className={`max-w-[85%] rounded-2xl px-4 py-3 text-[13px] leading-relaxed ${msg.role === "user" ? "bg-sol-yellow text-sol-black rounded-br-sm" : "bg-white/[0.06] text-gray-300 rounded-bl-sm border border-white/5"}`}>
                   {formatText(msg.text)}
                 </div>
               </div>
@@ -135,14 +135,14 @@ export default function Chatbot() {
           {messages.length <= 2 && (
             <div className="px-4 pb-2 flex gap-2 overflow-x-auto no-scrollbar">
               {quickReplies.map((qr, i) => (
-                <button key={i} onClick={() => send(qr)} className="flex-shrink-0 text-[11px] px-3 py-1.5 rounded-full border border-sol-copper/30 text-sol-copper hover:bg-sol-copper/10 transition-colors">{qr}</button>
+                <button key={i} onClick={() => send(qr)} className="flex-shrink-0 text-[11px] px-3 py-1.5 rounded-full border border-sol-yellow/30 text-sol-yellow hover:bg-sol-yellow/10 transition-colors">{qr}</button>
               ))}
             </div>
           )}
 
           <form onSubmit={handleSubmit} className="px-4 py-3 border-t border-white/5 flex gap-2">
-            <input type="text" value={input} onChange={e => setInput(e.target.value)} placeholder="Ask about beer, events, ordering..." className="flex-1 bg-white/[0.05] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-sol-muted focus:outline-none focus:border-sol-copper/50 transition-colors" />
-            <button type="submit" disabled={!input.trim()} className="w-10 h-10 rounded-xl bg-sol-copper text-sol-black flex items-center justify-center hover:bg-sol-amber transition-colors disabled:opacity-30">
+            <input type="text" value={input} onChange={e => setInput(e.target.value)} placeholder="Ask about beer, events, ordering..." className="flex-1 bg-white/[0.05] border border-white/10 rounded-xl px-4 py-2.5 text-sm text-white placeholder:text-sol-muted focus:outline-none focus:border-sol-yellow/50 transition-colors" />
+            <button type="submit" disabled={!input.trim()} className="w-10 h-10 rounded-xl bg-sol-yellow text-sol-black flex items-center justify-center hover:bg-sol-gold transition-colors disabled:opacity-30">
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
           </form>

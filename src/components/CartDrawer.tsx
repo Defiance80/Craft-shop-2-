@@ -30,7 +30,7 @@ export default function CartDrawer() {
               )}
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium truncate">{item.name}</p>
-                <p className="text-sol-copper text-sm">${item.price.toFixed(2)}</p>
+                <p className="text-sol-yellow text-sm">${item.price.toFixed(2)}</p>
                 <div className="flex items-center gap-3 mt-2">
                   <button onClick={() => updateQty(item.id, item.qty - 1)} className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-sm hover:bg-white/20">−</button>
                   <span className="text-sm w-4 text-center">{item.qty}</span>
@@ -46,9 +46,9 @@ export default function CartDrawer() {
           <div className="px-6 py-5 border-t border-white/10 space-y-4">
             <div className="flex justify-between text-lg">
               <span>Total</span>
-              <span className="font-display text-sol-copper">${total.toFixed(2)}</span>
+              <span className="font-display text-sol-yellow">${total.toFixed(2)}</span>
             </div>
-            <button className="w-full py-4 bg-sol-copper text-sol-black text-sm uppercase tracking-widest font-semibold rounded-xl hover:bg-sol-amber transition-colors">
+            <button className="w-full py-4 bg-sol-yellow text-sol-black text-sm uppercase tracking-widest font-semibold rounded-xl hover:bg-sol-gold transition-colors">
               Checkout
             </button>
           </div>

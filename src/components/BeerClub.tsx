@@ -14,7 +14,7 @@ export default function BeerClub() {
       <div className="relative max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-sol-copper mb-2">Join the Family</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-sol-yellow mb-2">Join the Family</p>
             <h2 className="font-display text-4xl md:text-5xl mb-6">The Beer Club</h2>
             <p className="text-sol-muted text-lg leading-relaxed mb-8">
               More than a membership — it&apos;s a community. Get exclusive beer, deep discounts, member-only parties, and be part of the Solaris inner circle.
@@ -30,7 +30,7 @@ export default function BeerClub() {
                 </div>
               ))}
             </div>
-            <a href="#" className="inline-flex px-8 py-4 bg-sol-copper text-sol-black text-sm uppercase tracking-widest font-semibold rounded hover:bg-sol-amber transition-colors">
+            <a href="#" className="inline-flex px-8 py-4 bg-sol-yellow text-sol-black text-sm uppercase tracking-widest font-semibold rounded hover:bg-sol-gold transition-colors">
               Join Beer Club
             </a>
           </div>
@@ -39,7 +39,7 @@ export default function BeerClub() {
             <div className="absolute inset-0 bg-gradient-to-t from-sol-dark/80 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-center">
               <p className="font-display text-3xl text-sol-cream">Life is better</p>
-              <p className="font-display text-3xl text-sol-copper">with good beer.</p>
+              <p className="font-display text-3xl text-sol-yellow">with good beer.</p>
             </div>
           </div>
         </div>

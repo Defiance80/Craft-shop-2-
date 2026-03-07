@@ -23,7 +23,7 @@ export default function Events() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
           <div>
-            <p className="text-xs uppercase tracking-[0.3em] text-sol-copper mb-2">What&apos;s Happening</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-sol-yellow mb-2">What&apos;s Happening</p>
             <h2 className="font-display text-4xl md:text-5xl">Live Music &amp; Events</h2>
           </div>
           <p className="text-sol-muted max-w-md text-sm leading-relaxed">
@@ -33,21 +33,21 @@ export default function Events() {
 
         <div className="flex gap-5 overflow-x-auto no-scrollbar md:grid md:grid-cols-4 pb-4 mb-16">
           {concerts.map((e, i) => (
-            <div key={i} className="group flex-shrink-0 w-[280px] md:w-auto bg-sol-card rounded-xl overflow-hidden border border-white/5 hover:border-sol-copper/30 transition-all duration-300">
+            <div key={i} className="group flex-shrink-0 w-[280px] md:w-auto bg-sol-card rounded-xl overflow-hidden border border-white/5 hover:border-sol-yellow/30 transition-all duration-300">
               <div className="relative h-44 overflow-hidden">
                 <div className="absolute inset-0 bg-cover bg-center group-hover:scale-105 transition-transform duration-500" style={{ backgroundImage: `url('${e.image}')` }} />
                 <div className="absolute inset-0 bg-gradient-to-t from-sol-card to-transparent" />
                 <div className="absolute top-4 left-4 bg-sol-black/80 backdrop-blur-sm rounded-lg px-3 py-2 text-center border border-white/10">
-                  <p className="text-[10px] uppercase tracking-widest text-sol-copper font-semibold">{e.day}</p>
+                  <p className="text-[10px] uppercase tracking-widest text-sol-yellow font-semibold">{e.day}</p>
                   <p className="text-sm font-display">{e.date}</p>
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="font-display text-xl mb-1 group-hover:text-sol-copper transition-colors">{e.name}</h3>
+                <h3 className="font-display text-xl mb-1 group-hover:text-sol-yellow transition-colors">{e.name}</h3>
                 <p className="text-sol-muted text-sm mb-3">{e.genre}</p>
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-sol-muted">{e.time}</span>
-                  <button className="text-xs px-3 py-1.5 rounded-full bg-sol-copper/10 text-sol-copper border border-sol-copper/20 hover:bg-sol-copper/20 transition-colors">Get Tickets</button>
+                  <button className="text-xs px-3 py-1.5 rounded-full bg-sol-yellow/10 text-sol-yellow border border-sol-yellow/20 hover:bg-sol-yellow/20 transition-colors">Get Tickets</button>
                 </div>
               </div>
             </div>
@@ -58,9 +58,9 @@ export default function Events() {
           <h3 className="font-display text-2xl mb-6 text-center">Weekly Lineup</h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-3">
             {weekly.map((w, i) => (
-              <div key={i} className="bg-sol-card rounded-xl p-4 border border-white/5 hover:border-sol-copper/20 transition-all text-center">
+              <div key={i} className="bg-sol-card rounded-xl p-4 border border-white/5 hover:border-sol-yellow/20 transition-all text-center">
                 <span className="text-2xl mb-2 block">{w.icon}</span>
-                <p className="text-[10px] uppercase tracking-widest text-sol-copper mb-1">{w.day}</p>
+                <p className="text-[10px] uppercase tracking-widest text-sol-yellow mb-1">{w.day}</p>
                 <p className="text-sm font-medium mb-1">{w.name}</p>
                 <p className="text-xs text-sol-muted">{w.desc}</p>
               </div>
