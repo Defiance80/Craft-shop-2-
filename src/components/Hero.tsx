@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/hero-bg.jpg')" }} />
-      <div className="absolute inset-0 bg-gradient-to-b from-sol-black/60 via-sol-black/40 to-sol-black" />
+      <div className="absolute inset-0 bg-gradient-to-b from-sol-black/75 via-sol-black/60 to-sol-black" />
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className="animate-fade-up mb-6">
           <Image src="/solaris-logo.png" alt="Solaris Beer & Blending" width={120} height={120} className="mx-auto drop-shadow-2xl" />
@@ -13,12 +13,12 @@ export default function Hero() {
           <span className="w-2 h-2 rounded-full bg-sol-yellow animate-pulse" />
           <span className="text-xs uppercase tracking-[0.25em] text-sol-yellow">Murrieta&apos;s Craft Brewery &amp; Music Venue</span>
         </div>
-        <h1 className="animate-fade-up animate-fade-up-d1 font-display text-5xl sm:text-7xl md:text-8xl leading-[0.95] mb-6">
+        <h1 className="animate-fade-up animate-fade-up-d1 font-display text-5xl sm:text-7xl md:text-8xl leading-[0.95] mb-6 font-bold drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]">
           Where Beer
           <br />
           <span className="text-gradient-sun">Meets Music</span>
         </h1>
-        <p className="animate-fade-up animate-fade-up-d2 text-lg md:text-xl text-sol-muted max-w-2xl mx-auto mb-10">
+        <p className="animate-fade-up animate-fade-up-d2 text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
           Fresh hop IPAs brewed in-house. National touring acts on our stage. A community that feels like home. This is Solaris.
         </p>
         <div className="animate-fade-up animate-fade-up-d3 flex flex-col sm:flex-row gap-4 justify-center">
